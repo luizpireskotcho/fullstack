@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #092230;
+  box-sizing: border-box;
+}
+
+.my_video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  z-index: -100;
+}
+.holder {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.7);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.holder h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+.holder p {
+  color: #ccc;
+  font-size: 1.5625rem;
+  font-family: sans-serif;
+  width: 50%;
+  line-height: 1.875rem;
+  margin: 10px auto;
+  line-height: 1.875rem;
+  text-align: justify;
+}
+
+.btn {
+  width: 12.5rem;
+  font-size: 1.125rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(80deg, #0088ff, orange);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 1.25rem auto;
+}
+
+.btn:hover {
+  background: linear-gradient(-80deg, #0088ff, orange);
+  transition: 0.7s;
+  opacity: 0.8;
+}
+
+@media (max-width: 720px) {
+  .holder h1 {
+    font-size: 1.5625rem;
+  }
+  .holder p {
+    width: 90%;
+    line-height: 1.5625rem;
+  }
+  .holder {
+    width: auto;
+  }
+}
