@@ -110,3 +110,43 @@ select {
   text-transform: uppercase;
   text-align: center;
 }
+
+/* Tablet Tela Grande */
+@media (min-width: 1024px) and (max-width: 1900px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
+/* Tablet Tela Pequena */
+@media (min-width: 834px) and (max-width: 1024px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+  .box img {
+    width: 50%;
+  }
+}
+/* Mobile */
+@media (max-width: 833px) {
+  .box {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  .box img {
+    display: none;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    width: auto;
+  }
+
+  .right form {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+}
